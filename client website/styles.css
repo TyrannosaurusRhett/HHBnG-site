@@ -1,0 +1,148 @@
+body{
+	background-color: rgb(61,17,3); /*dark brown*/
+	font-family: 'Alegreya', serif;
+}
+main{
+	width: 93%;
+	margin: 0 auto;
+	background-color: rgb(255,255,224); /*light yellow*/
+}
+/*global styles*/
+
+figure{
+	margin: 0;
+}
+a{
+	color: rgb(205, 92, 92); /*indian red*/
+	font-weight: bold;
+	text-decoration: none;
+}
+h2{
+	text-align: center;
+}
+img{
+	border: 1px solid rgb(61,17,3); /*dark brown*/;
+}
+
+/*end global styles*/
+header{
+	display: flex;
+	justify-content: center;
+	padding: 10px 0;
+}
+header figure img{
+	width: 100%;
+	border: none;
+}
+header h3{
+	text-align: center;
+}
+nav{
+	background-color: rgb(205, 92, 92); /*indian red*/
+}
+nav ul{
+	display: flex;
+	flex-wrap: wrap;
+	list-style: none;
+	font-size: 1.15em;
+	margin-bottom: 0;
+}
+nav ul li a{
+	display: block;
+	color: rgb(0,0,0); /*black*/
+	text-decoration: none;
+	font-weight: bold;
+	padding: 10px 10px;
+}
+nav ul li a:hover{
+	background-color: rgb(230,173,173); /*pale indian red*/
+}
+.subnav{
+	background-color: rgb(255,140,0); /*dark orange*/
+}
+.subnav ul{
+	display: flex;
+	flex-wrap: wrap;
+	list-style: none;
+	margin: 3px auto 0 auto;
+}
+.subnav ul li a{
+	display: block;
+	color: rgb(0,0,0); /*black*/
+	text-decoration: none;
+	padding: 5px 10px;
+}
+.subnav ul li a:hover{
+	background-color: rgb(255,210,128); /*pale orange*/
+}
+section{
+	border-bottom: 3px solid rgb(61,17,3); /*dark brown*/
+}
+section article, section aside{
+	padding: 0 10px;
+}
+.right img{
+	width: 150px;
+}
+.left img{
+	width: 150px;
+}
+section aside{
+	border-left: none;
+}
+.bottom{
+	border-bottom: 3px solid rgb(61,17,3); /*dark brown*/
+}
+.demo_games{
+	display: flex;
+	justify-content: center;
+}
+table{
+	display: block;
+}
+table, th, td{
+	border: 1px solid black;
+	border-collapse: collapse
+}
+tr:nth-of-type(odd){
+background-color: rgb(255,228,181); /*moccasin*/
+}
+table tr td:last-child{
+	text-align: right;
+}
+footer{
+	background-color: rgb(205, 92, 92); /*indian red*/
+	padding: 10px 0;
+}
+@media screen and (min-width: 800px){
+	section{
+		display: flex;
+		justify-content: space-between;
+	}
+	section aside{
+		flex-basis: 250px;
+		flex-grow: 0;
+		flex-shrink: 0;
+		border-left: 3px solid rgb(61,17,3); /*dark brown*/
+	}
+	table{
+		max-width: 80%;
+		margin: 10px auto;
+		text-align: center;
+	}
+} /*end 700px*/
+@media screen and (min-width: 500px){
+	.right img{
+		float: right;
+		overflow: auto;
+		width: auto;
+		margin: 10px;
+	}
+	.left img{
+		float: left;
+		overflow: auto;
+		width: auto;
+		margin: 10px;
+	}
+
+} /*end 600px*/
